@@ -37,15 +37,6 @@ TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_VARIANT := generic
 TARGET_CPU_VARIANT_RUNTIME := cortex-a53
 
-# Build the 64 bit targets
-TARGET_ARCH := arm64
-TARGET_ARCH_VARIANT := armv8-2a-dotprod
-TARGET_CPU_ABI := arm64-v8a
-TARGET_CPU_ABI2 :=
-TARGET_CPU_VARIANT := cortex-a76
-TARGET_CPU_VARIANT_RUNTIME := cortex-a76
-TARGET_USES_64_BIT_BINDER := true
-
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := water
 TARGET_NO_BOOTLOADER := true
@@ -169,6 +160,7 @@ include device/mediatek/sepolicy_vndr/SEPolicy.mk
 
 # VINTF
 DEVICE_MANIFEST_FILE := $(CONFIGS_PATH)/vintf/manifest.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
 hardware/mediatek/vintf/mediatek_framework_compatibility_matrix.xml
 
 # Inherit the proprietary files
