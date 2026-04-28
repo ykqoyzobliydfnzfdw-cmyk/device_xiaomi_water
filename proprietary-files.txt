@@ -151,7 +151,7 @@ vendor/lib/libnvram.so
 vendor/lib/libnvram_sec.so
 
 # Bluetooth (A2DP)
-vendor/lib/vendor.mediatek.hardware.bluetooth.audio-V1-ndk.so
+system/lib/vendor.mediatek.hardware.bluetooth.audio-V1-ndk.so
 vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.1.so
 vendor/lib/hw/android.hardware.bluetooth.audio@2.0-impl.so
 vendor/lib/hw/android.hardware.bluetooth.audio@2.1-impl.so
